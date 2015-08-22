@@ -1,0 +1,222 @@
+/* web fonts ------------------ */
+@font-face {
+	font-family: 'Abolition Regular';
+	src: url('../fonts/Abolition-regular-webfont/eot');
+	letter
+}
+
+/* 
+Examples of other imports:
+  @import 'base.css';
+  @import 'layout.css';
+  @import 'typography.css';
+*/
+
+/*@import 'import-styles.css';
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 72px;
+  color: white;
+}
+
+header {
+  background-color: orange;
+}
+
+p {
+  font-size: 20px;
+}*/
+
+/*universal selector*/
+/** {
+	margin: 0;
+	padding: 0;
+	color: red;
+
+}*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: #878787;
+	margin: 0;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-style: italic;
+	line-height: 1.5;
+	font: 1em/1.5 "Helvetica Neue";
+}
+
+.main-header {
+	background-color: orange;
+	font-size: 2em;
+	height: 850px;
+	background-image: url('../img/mountains.jpg');
+	background-repeat: repeat-y; /*repeat x or y axis*/
+	background-position: center; /*center by default*/ 
+	background-size: cover; /*scale image to cover full width*/
+
+	background: #ffa949 url('../img/mountains.jpg') no-repeat center;
+	background-image: radial-gradient(circle, #ffa949, firebrick);
+	background: linear-gradient(#ffa949, transparent 90%),
+				linear-gradient(0deg, #fff, transparent),
+				#ffa949 url('../img/mountains.jpg') no-repeat center;
+
+	;
+	
+
+}
+
+
+header span {
+	color: white;
+	font-size: 26px;
+}
+
+h1 {
+	font-size: 5.625rem; /* */
+	color: white;
+	text-shadow: 5px 8px 0px #222;
+}
+
+h2 {
+	font-size: 53px;
+	font-weight: normal;
+	margin-bottom: .5em; /*26px */
+}
+
+h3 {
+	font-size: 20px;
+	color: #48525c;
+	margin-bottom: 1.7em; /*34px/20px */
+}
+
+p {
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+ul,
+ol {
+	padding-left: 0;
+	margin-left: 30px 0px;
+}
+
+.primary-content
+.secondary-content {
+	width: 75%;
+	text-align: center;
+	max-width: 900px;
+}
+
+/*.secondary-content {
+	border-top: 2px solid lightgrey;
+}*/
+
+#main-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	border-bottom: solid 10px orange;
+}
+
+p {
+	max-width: 50%;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.title {
+	color: white;
+	font-size: 26px; /* 26px/16px = 1.625em   */
+}
+
+.primary-content {
+	text-align: center;
+}
+
+.t-border {
+	border-top: 2px solid lightgrey;
+}
+
+a:link {
+	color: orange;
+	text-decoration: none;
+}
+
+a:visited {
+	color: lightblue;
+}
+
+a:hover {
+	color: forestgreen;
+}
+
+a:active {
+	color: lightcoral;
+}
+
+a:focus {
+	color: white;
+}
+
+.wildlife {
+color: white;
+padding-top: 100px;
+padding-right: 120px;
+
+border-width: 10px;
+border-style: solid dotted; /*dashed*/
+border-color: #ffa949;
+border-bottom-style: dashed;
+border-top-style: dashed;
+display: none;
+box-shadow: inset 0 0 50px rgba(0,0,0,0.8);
+
+border-radius: 50%;
+border-top-left-radius: 
+
+}
+
+.resorts {
+	width: 46.5%;
+	float: left;
+}
+
+/* .group*/
+.group: after {
+	content: "";
+	display: table;
+	clear: both; /* clear floats*/
+}
+
+/* media queries ------------------ */
+@media (max-width: 1024px) {
+	.primary-content,
+	.secondary-content,
+		width: 90%;
+	 {
+		background: royalblue;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		background: darkred;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+	body {
+		background: seagreen;
+	}
+}
+
